@@ -8,6 +8,8 @@ else
     QT_SUPPORT=OFF
 fi
 
+CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+
 mkdir build && cd build
 
 cmake ${CMAKE_ARGS} \
@@ -32,6 +34,8 @@ cmake ${CMAKE_ARGS} \
   -DBUILD_tools=ON \
   -DBUILD_apps=OFF \
   -DBoost_NO_BOOST_CMAKE:BOOL=ON \
+  -DQT_HOST_PATH:STRING="${PREFIX}" \
+
   ..
 
 cmake --build . --config Release

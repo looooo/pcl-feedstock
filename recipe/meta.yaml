@@ -41,7 +41,7 @@ requirements:
     - vtk
     - libpng
     - glew
-    - qt-main  # [not ppc64le]
+    - qt6-main  # [not ppc64le]
   run:
     - flann
     - qhull
