@@ -1,9 +1,9 @@
 c_stdlib:
 - vs
 channel_sources:
-- conda-forge
+- freecad/label/qt6, conda-forge
 channel_targets:
-- conda-forge main
+- freecad qt6
 cxx_compiler:
 - vs2019
 flann:

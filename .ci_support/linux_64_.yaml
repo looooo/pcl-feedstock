@@ -5,9 +5,9 @@ c_stdlib_version:
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge
+- freecad/label/qt6, conda-forge
 channel_targets:
-- conda-forge main
+- freecad qt6
 cxx_compiler:
 - gxx
 cxx_compiler_version:
