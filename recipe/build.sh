@@ -35,7 +35,6 @@ cmake ${CMAKE_ARGS} \
   -DBUILD_apps=OFF \
   -DBoost_NO_BOOST_CMAKE:BOOL=ON \
   -DQT_HOST_PATH:STRING="${PREFIX}" \
-
   ..
 
 cmake --build . --config Release
