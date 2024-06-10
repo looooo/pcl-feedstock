@@ -29,7 +29,7 @@ requirements:
     - {{ cdt('libxxf86vm') }}        # [linux]
     - {{ cdt('libxext') }}           # [linux]
     - cmake
-    - ninja                          # [win]
+    - ninja
     - make                           # [unix]
     - pkgconfig
   host:

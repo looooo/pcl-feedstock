@@ -12,7 +12,7 @@ CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 
 mkdir build && cd build
 
-cmake ${CMAKE_ARGS} \
+cmake -G "Ninja" \
   -DCMAKE_INSTALL_PREFIX=$PREFIX \
   -DCMAKE_BUILD_TYPE=Release \
   -DWITH_CUDA=OFF \
